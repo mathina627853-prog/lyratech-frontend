@@ -1,0 +1,9 @@
+{
+  "name": "lyratech-frontend",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-03",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  }
+}
