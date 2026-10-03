@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lyra Tech - Products</title>
+
+    <link rel="stylesheet" href="products.css">
+
+</head>
+
+<body>
+
+    <header class="products-header">
+
+        <div class="logo">
+
+            <h1>Lyra Tech Products</h1>
+
+            <p>Smart Electronics for Everyday Life</p>
+
+        </div>
+
+   <nav>
+
+    <a href="index.html" target="_self">Home</a>
+
+    <a href="products.html" target="_self">Products</a>
+
+  
+
+    <a href="about.html" target="_self">About</a>
+
+    <a href="contact.html" target="_self">Contact</a>
+
+</nav>
+    </header>
+
+
+    <main class="products-page">
+
+        <section class="product-form-section">
+
+            <h2 id="formTitle">Add Product</h2>
+
+            <form id="productForm">
+
+                <input type="hidden" id="productId">
+
+
+                <div class="form-group">
+
+                    <label for="productName">
+                        Product Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Enter product name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="categoryId">
+                        Category
+                    </label>
+
+                    <select id="categoryId" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="price">
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Enter price"
+                        step="0.01"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-buttons">
+
+                    <button
+                        type="submit"
+                        id="submitButton">
+                        Add Product
+                    </button>
+
+                    <button
+                        type="button"
+                        id="cancelButton">
+                        Cancel
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section class="product-list-section">
+
+            <h2>Products</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Product Name</th>
+
+                            <th>Category</th>
+
+                            <th>Price</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="productTableBody">
+
+                        <tr>
+
+                            <td colspan="5">
+                                Loading products...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+  
+<script src="products.js"></script>
+<script src="url-hide.js"></script>
+</body>
+
+</html>
